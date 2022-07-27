@@ -36,7 +36,7 @@ const Header = () => (
           <p className="p-text">Frontend Developer</p>
           <p className="p-text">Data Scientist</p>
           <p className="p-text">Former ATS @Microsoft</p>
-          <p className="p-text">Former SP @Microsoft</p>
+          <p className="p-text">Former SP @Microsoft</p> 
         </div>
       </div>
     </motion.div>

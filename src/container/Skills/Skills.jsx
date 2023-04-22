@@ -11,17 +11,17 @@ const Skills = () => {
 
   const [experiences, setExperiences] = useState([])
   const [skills, setSkills] = useState([])
- 
+
   useEffect(() => {
     const query = '*[_type == "experiences"]'
     const skillsQuery = '*[_type == "skills"]'
 
     client.fetch(query).then((data) => {
       setExperiences(data)
-    }); 
+    });
 
     client.fetch(skillsQuery).then((data) => {
-      setSkills(data); 
+      setSkills(data);
     });
   }, []);
 
@@ -39,6 +39,7 @@ const Skills = () => {
               key={skill.name}
             >
               <div
+
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
@@ -89,7 +90,7 @@ const Skills = () => {
     </>
   );
 };
- 
+
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
   'skills',
